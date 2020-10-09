@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    font-size: 24px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 }
@@ -186,18 +186,22 @@ section>header {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    justify-content: stretch;
+    align-items: stretch;
 }
 
 .three-boxes-wide-wrapper .card {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex-basis: 20vh;
+    flex: 1 1 20vh;
     margin: .5rem;
     border-radius: 3px;
     min-height: 20vh;
     color: #fff;
     padding: .5rem;
     white-space: nowrap;
+    max-width: 30%;
 }
 
 .three-boxes-wide-wrapper .card h3 {
@@ -217,13 +221,13 @@ section>header {
 
 .three-boxes-wide-wrapper .card:first-child {
     background: url(assets/images/lighting-square.jpg) center no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     position: relative;
 }
 
 .three-boxes-wide-wrapper .card:nth-child(2) {
     background: url(assets/images/lighting-square.jpg) center no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -233,7 +237,7 @@ section>header {
 
 .three-boxes-wide-wrapper .card:nth-child(3) {
     background: url(assets/images/lighting-square.jpg) center no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     position: relative;
 }
 
@@ -401,7 +405,7 @@ section>header {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 0 1rem;
+        padding: 0;
     }
 
     .info-bar>.info-bar-card {
