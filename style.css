@@ -29,6 +29,10 @@ h3 {
     font-size: .7rem;
 }
 
+h4 {
+    font-size: .5rem;
+}
+
 p {
     font-size: .5rem;
 }
@@ -46,6 +50,33 @@ header {
     margin: 0;
     padding: 0;
     min-height: 20vh;
+}
+
+i {
+    color: #999;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul>li {
+    line-height: inherit;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.container>section {
+    max-width: 1280px;
 }
 
 footer {
@@ -67,18 +98,34 @@ hr {
     min-width: 8rem;
 }
 
+section {
+    padding: 0;
+    margin: 0;
+}
+
+section>header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-basis: max-content;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     min-height: 100%;
     border: 0 auto;
-}
-
-.copyright {
-    font-size: .3rem;
-    position: absolute;
-    bottom: 0;
-    margin: .5rem;
 }
 
 .head-text-wrapper {
@@ -104,24 +151,41 @@ hr {
     padding-bottom: 1rem;
 }
 
+.inline-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-input {
+    border: 1px solid #000;
+    min-height: 1.5rem;
+    padding: 0;
+    line-height: 1rem;
+}
+
 .theme-button {
     background-color: #000;
     color: #fff;
     border: none;
     min-height: 1.5rem;
     padding: .5rem 1rem;
-    border-radius: 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.inline-form>.theme-button {
+    border-radius: 0 3px 3px 0;
+}
+
 .three-boxes-wide-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width: 100%;
+    width: 100%;
 }
 
 .three-boxes-wide-wrapper .card {
@@ -289,4 +353,143 @@ hr {
 .blog-post-wrapper .post-abstract {
     font-size: .5rem;
     color: #333;
+}
+
+.newsletter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 1rem 0;
+}
+
+.newsletter-wrapper>header {
+    margin: 0;
+}
+
+.newsletter-wrapper .inline-form {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.newsletter-wrapper .inline-form>*:first-child {
+    margin-right: .5rem;
+    flex: 1 2 0;
+}
+
+.info-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    min-height: 4rem;
+}
+
+.info-bar>.info-bar-card {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    max-width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+    .info-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .info-bar>.info-bar-card {
+        min-width: 40%;
+    }
+}
+
+.info-bar>.info-bar-card>.card-info,
+.info-bar>.info-bar-card>.card-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info-bar>.info-bar-card>.card-info p,
+.info-bar>.info-bar-card>.card-info h3 {
+    font-size: .4rem;
+    margin: 0;
+}
+
+footer .footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 20%;
+}
+
+footer .footer-column h3 {
+    font-size: .7rem;
+}
+
+footer .footer-column p {
+    color: #888;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.social-icons i {
+    margin: .2rem;
+}
+
+footer ul {
+    font-size: .5rem;
+    color: #888;
+}
+
+footer ul>li {
+    line-height: 1rem;
+}
+
+footer .img-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer .img-grid img {
+    object-fit: cover;
+    max-width: 32%;
+    margin: 1px;
+}
+
+footer .footer-columns {
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-columns {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    footer .footer-columns .footer-column {
+        min-width: 40%;
+    }
+}
+
+.copyright {
+    font-size: .3rem;
+    bottom: 0;
+    margin: .5rem;
 }
