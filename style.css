@@ -461,7 +461,14 @@ footer .footer-column {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    max-width: 20%;
+    max-width: 35%;
+    flex-basis: content;
+}
+
+@media screen and (max-width: 767px) {
+    footer .footer-column {
+        max-width: 50%;
+    }
 }
 
 footer .footer-column h3 {
@@ -469,6 +476,9 @@ footer .footer-column h3 {
 }
 
 footer .footer-column>p {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
     color: #888;
     overflow-x: hidden;
     text-overflow: ellipsis;
