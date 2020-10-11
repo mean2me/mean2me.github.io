@@ -106,6 +106,105 @@ body {
     padding-right: .5rem;
 }
 
+.breadcrumb {
+    background-color: transparent;
+}
+
+ol.breadcrumb>li.breadcrumb-item:not(:first-child)::before {
+    content: ">"
+}
+
+ol.breadcrumb>li.breadcrumb-item>a,
+ol.breadcrumb>li.breadcrumb-item>a:link {
+    color: #444;
+}
+
+ol.breadcrumb>li.breadcrumb-item:last-child>a,
+ol.breadcrumb>li.breadcrumb-item:last-child>a:link {
+    color: #f0f0f0;
+}
+
+#carousel-thumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+}
+
+#carousel-wrapper {
+    position: relative;
+}
+
+div.carousel-indicators {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100px;
+}
+
+div.carousel-indicators>ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.carousel-indicators ol>li {
+    display: block;
+    position: relative;
+    flex: 1 1 10vh;
+}
+
+div.carousel-indicators ol>li>img {
+    display: block;
+    object-fit: cover;
+}
+
+#carousel-vertical-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+#carousel-vertical-selector ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+#carousel-vertical-selector ol li {
+    display: block;
+    min-height: 1rem;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 100%;
+}
+
+#carousel-vertical-selector ol li img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 64px;
+    margin: .2rem;
+    opacity: .5;
+    cursor: pointer;
+}
+
+#carousel-vertical-selector ol li img.active {
+    opacity: 1;
+}
+
 @media screen and (max-width: 767px) {
     .navbar-icons {
         position: absolute;
