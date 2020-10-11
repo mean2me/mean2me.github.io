@@ -87,7 +87,7 @@
 
     <div class="container-fluid w-100 bg-light mt-4 mb-3">
       <nav aria-label="breadcrumb w-100">
-        <ol class="breadcrumb w-100 justify-content-start offset-md-2">
+        <ol class="breadcrumb justify-content-start offset-md-2">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item"><a href="#">Library</a></li>
           <li class="breadcrumb-item active" aria-current="page">Data</li>
@@ -97,7 +97,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-7">
+        <div class="col-md-7">
           <!-- carousel custom -->
           <div id="carousel-wrapper" class="container position-relative">
             <div class="row">
@@ -148,7 +148,7 @@
           </div>
           <!-- .carousel-custom -->
         </div>
-        <div class="col-5">
+        <div class="col-md-5 mt-5 mt-md-0">
           <!-- product-left -->
           <div class="container p-0 m-0">
             <div class="row">
@@ -156,15 +156,13 @@
             </div>
             <div class="row">
               <div class="col">&dollar;15.00</div>
-              <div class="col text-nowrap">
+              <div class="col text-nowrap review-stars">
                 <i class="mdi mdi-star"></i>
                 <i class="mdi mdi-star"></i>
                 <i class="mdi mdi-star"></i>
                 <i class="mdi mdi-star"></i>
                 <i class="mdi mdi-star"></i>
-                <span class="text-secondary">
-                  <small>(5 reviews)</small>
-                </span>
+                <span class="text-secondary"> (5 reviews) </span>
               </div>
             </div>
             <div class="row">
@@ -180,6 +178,81 @@
                 </p>
               </div>
             </div>
+            <div class="row">
+              <div class="col">
+                <h6>
+                  <small class="font-weight-bold">
+                    COLOR: <span id="selected-color">PINK</span>
+                  </small>
+                </h6>
+                <div class="color-selector d-flex flex-row">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="selected-color-pink"
+                    name="selected-color"
+                    value="pink"
+                    checked
+                  />
+                  <label for="selected-color-pink"></label>
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="selected-color-grey"
+                    name="selected-color"
+                    value="grey"
+                  />
+                  <label for="selected-color-grey"></label>
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="selected-color-black"
+                    name="selected-color"
+                    value="black"
+                  />
+                  <label for="selected-color-black"></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- size selector -->
+            <div class="row">
+              <div class="col">
+                <h6>
+                  <small class="font-weight-bold">
+                    SIZE: <span id="selected-size">S</span>
+                  </small>
+                </h6>
+                <div class="size-selector d-flex flex-row">
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="selected-size-s"
+                    name="selected-size"
+                    value="S"
+                    checked
+                  />
+                  <label for="selected-size-s">S</label>
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="selected-size-m"
+                    name="selected-size"
+                    value="M"
+                  />
+                  <label for="selected-size-m">M</label>
+                  <input
+                    class="custom-radio"
+                    type="radio"
+                    id="selected-size-l"
+                    name="selected-size"
+                    value="L"
+                  />
+                  <label for="selected-size-l">L</label>
+                </div>
+              </div>
+            </div>
+            <!-- .size selector -->
           </div>
           <!-- .product-left -->
         </div>
@@ -204,5 +277,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/custom-carousel.js"></script>
+    <script src="assets/js/options-selector.js"></script>
   </body>
 </html>

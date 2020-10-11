@@ -211,3 +211,85 @@ div.carousel-indicators ol>li>img {
         right: .1rem;
     }
 }
+
+.review-stars {
+    font-size: .8rem;
+}
+
+.review-stars i::before {
+    color: gold;
+    font-size: 1rem;
+}
+
+.color-selector input[type="radio"] {
+    opacity: 0;
+}
+
+.color-selector input[type="radio"]+label,
+.color-selector input[type="radio"]:checked+label {
+    display: block;
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    padding: 1px;
+    position: relative;
+}
+
+.color-selector input[type="radio"]+label::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.color-selector input[type="radio"]:checked+label::before {
+    border-color: #000;
+}
+
+.color-selector input[type="radio"]:checked+label::before {
+    border-color: #000;
+}
+
+.color-selector input[type="radio"][value="pink"]+label {
+    background-color: pink;
+}
+
+.color-selector input[type="radio"][value="grey"]+label {
+    background-color: grey;
+}
+
+.color-selector input[type="radio"][value="black"]+label {
+    background-color: black;
+}
+
+.size-selector input[type="radio"] {
+    opacity: 0;
+}
+
+.size-selector input[type="radio"]+label {
+    display: block;
+    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.size-selector input[type="radio"]:checked+label {
+    display: block;
+    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #ccc;
+}
