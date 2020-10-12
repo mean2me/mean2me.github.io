@@ -523,3 +523,60 @@ div.carousel-indicators ol>li>img {
     overflow: hidden;
     font-weight: bold;
 }
+
+footer h3, footer h4 {
+    font-weight: bold;
+}
+
+footer h4 {
+    font-size: .8rem;
+    padding-top: 1rem;
+}
+
+footer ul > li,
+footer ul > li > a,
+footer ul>li>a:link,
+footer ul>li>a:visited,
+footer ul>li>a:active
+{
+    color: #999;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+
+address {
+    display: block;
+    font-size: .8rem;
+}
+
+address span {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+address span>[class^=icon] {
+    font-size: 1.2rem;
+}
+
+address span>span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.social-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.social-icons [class^="icon"]::before {
+    color: #999;
+    font-size: .8rem;
+}
