@@ -396,6 +396,130 @@ div.carousel-indicators ol>li>img {
     max-width: 100%;
 }
 
-.tech-spec .feature {
-    
+.tech-spec div:first-child {
+    text-align: right;
+}
+.tech-spec div:last-child {
+    text-align: left;
+}
+
+.tech-spec i[class^="icon-"]::before {
+    font-size: 2rem!important;
+}
+
+.text-justify {
+    text-align-last: center;
+}
+
+@media screen and (max-width: 767px) {
+    .tech-spec i[class^="icon-"]::before {
+        font-size: 1.5rem !important;
+    }
+}
+
+.you-may-like img {
+    object-fit: cover;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.you-may-like .photo-wrapper {
+    position: relative;
+}
+.you-may-like .card-title {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.you-may-like .card {
+    border: none;
+}
+
+.you-may-like .card .card-text {
+    color: #999;
+}
+
+.price {
+    font-size: .8rem;
+    white-space: nowrap;
+}
+
+.price.discount-before {
+    text-decoration: line-through;
+}
+.price.price.discount-after {
+    color: #FF0000;
+}
+
+.product-variant-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 32px;
+}
+
+.product-variant-wrapper > .product-variant {
+    width: 32px;
+    height: 32px;
+    margin: .1rem;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-variant-wrapper>.product-variant::after {
+    border: 1px solid #000;
+    width: 32px;
+    height: 32px;
+    content: "";
+    border: 1px solid #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 16px;
+}
+.product-variant-wrapper>.product-variant.photo img {
+    object-fit: cover;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.product-variant-wrapper>.product-variant.color>span{
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.product-variant-wrapper>.product-variant.color>span.pink {
+    background-color: pink;
+}
+
+.product-variant-wrapper>.product-variant.color>span.black {
+    background-color: black;
+}
+
+.product-variant-wrapper>.product-variant.color>span.green {
+    background-color: #22BDB0;
+}
+
+.discount-sticker {
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    background: #FF4E00;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .5rem;
+    color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    font-weight: bold;
 }
