@@ -3,6 +3,16 @@ body {
     font-size: 16px;
 }
 
+ul,
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    line-height: 1rem;
+}
+
 @media screen and (max-width: 991px) {
 
     html,
@@ -292,4 +302,100 @@ div.carousel-indicators ol>li>img {
     height: 24px;
     background-color: #000;
     color: #ccc;
+}
+
+.btn-pill {
+    border-radius: 24px;
+    font-size: .6rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: #55CFE1;
+    color: #fff;
+    height: 36px;
+}
+
+.qty-pill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 64px;
+    width: auto;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    border: 1px solid #000;
+    height: 100%;
+    width: 100%;
+}
+
+.qty-pill button {
+    border: none;
+    background-color: transparent;
+    border-radius: 16px;
+    width: 2rem;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .qty-pill {
+        height: 3rem;
+        padding: 0 1rem 0 1rem;
+        max-width: 80%;
+        justify-self: center;
+        align-self: center;
+        min-width: 80%;
+    }
+
+    .btn-pill {
+        width: 80%;
+    }
+
+    .qty-pill button {
+        width: 4rem;
+    }
+}
+
+.btn-heart {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.btn-heart .mdi::before {
+    font-size: 1rem;
+}
+
+.grey-area .nav-item.nav-link.active {
+    border: 1px solid #000;
+    border-radius: 24px;
+    background-color: transparent;
+    color: #000;
+}
+.grey-area .nav-item.nav-link {
+    color: #999;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.grey-area .girls-wrapper div.col {
+    max-width: 25%;
+}
+.grey-area .girls-wrapper img {
+    max-width: 100%;
+}
+
+.bg-light {
+    background-color: #F6F6F8!important;
+}
+
+.tech-spec {
+    font-size: .8rem;
+}
+.tech-spec .tshirt img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.tech-spec .feature {
+    
 }
